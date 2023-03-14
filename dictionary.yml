@@ -1,0 +1,59 @@
+en:
+    footer: 'All Rights Reserved'
+    exit: 'Exit'
+    login_button: 'Log in'
+    login_button_1: 'Log in'
+    enter_email: 'Enter your e-mail'
+    enter_password: 'Enter password'
+    remember_me: 'Remember me'
+    voice_technologies_1: 'Voice Technologies'
+    voice_technologies_2: 'Robotic External Contact Center'
+    our_business_directions: 'Business directions'
+    precollection: 'Pre-collection: notifying of an upcoming payment date '
+    st_phase_soft: '1st-phase soft collection: 1-5 day overdue'
+    nd_phase_soft: '2nd-phase soft collection: 6-10 day overdue'
+    rd_phase_soft: '3rd-phase soft collection: 11-15 day overdue'
+    rd_person_calls: 'Third party calls'
+    telemarketing: 'Telemarketing: Cold and warm calling sales'
+    nps: 'NPS: Customer Satisfaction Measurements'
+    hr_calls: 'HR: Calls for mass positions hiring'
+    
+ру:
+    footer: 'Все Права Сохранены'
+    exit: 'Выход'
+    login_button: 'Войти'
+    login_button_1: 'Личный кабинет'
+    enter_email: 'Введите вашу почту'
+    enter_password: 'Введите пароль'
+    remember_me: 'Запомнить меня'
+    voice_technologies_1: 'Voice Technologies'
+    voice_technologies_2: 'Роботизированный Внешний Контактный Центр'
+    our_business_directions: 'Направления деятельности'
+    precollection: 'Преколлекшн: уведомление о предстоящей дате платежа '
+    st_phase_soft: '1 фаза софт коллекшн: просрочка 1-5 дней '
+    nd_phase_soft: '2 фаза софт коллекшн: просрочка 6-10 дней'
+    rd_phase_soft: '3 фаза софт коллекшн: просрочка 11-15 дней'
+    rd_person_calls: 'Звонки третьим лицам'
+    telemarketing: 'Телемаркетинг: телефонные продажи по холодным и тёплым базам'
+    nps: 'NPS: Замеры Удовлетворённости Клиентов'
+    hr_calls: 'HR-звонки: Подбор Массовых Позиций'
+
+uz:
+    footer: 'Barcha huquqlar himoyalangan'
+    exit: 'Chiqish'
+    login_button: 'Kirish'
+    login_button_1: 'Shaxsiy kabinet'
+    enter_email: 'Elektron pochtangizni kiriting'
+    enter_password: 'Parolni kiriting'
+    remember_me: "Mening ma'lumotlarimni eslab qoling"
+    voice_technologies_1: 'Voice Technologies'
+    voice_technologies_2: 'Robotlashtirilgan Tashqi Aloqa Markazi'
+    our_business_directions: 'Faoliyat'
+    precollection: "Pre-collection: yaqinlashib kelayotgan to'lov sanasi haqida ogohlantirish"
+    st_phase_soft: "Soft collection 1 bosqichi: to'lo'v muddati 1-5 kunga kechiktirilgan"
+    nd_phase_soft: "Soft collection 2 bosqichi: to'lo'v muddati  6-10 kunga kechiktirilgan"
+    rd_phase_soft: "Soft collection 3 bosqichi: to'lo'v muddati  11-15 kunga kechiktirilgan"
+    rd_person_calls: "Uchinchi shaxslarga qo'ng'iroqlar"
+    telemarketing: "Telemarketing: sovuq va issiq qo'ng'roqlar orqali sotish"
+    nps: "NPS: Mijozlarning qoniqishini o'lchash"
+    hr_calls: "HR qo'ng'iroqlari: ommaviy lavozimlarga suhbat o'tkazish"

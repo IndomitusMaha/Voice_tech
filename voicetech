@@ -1,0 +1,31 @@
+server {
+        server_name www.voicetechnologies.pro;
+
+        location /static {
+                alias /home/maha/Voice_tech/static;
+        }
+
+        location / {
+                proxy_pass http://localhost:8000;
+                include /etc/nginx/proxy_params;
+                proxy_redirect off;
+        }
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/www.voicetechnologies.pro/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/www.voicetechnologies.pro/privkey.pem; # managed by Certb$    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+}
+server {
+    if ($host = www.voicetechnologies.pro) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+        listen 80;
+        server_name www.voicetechnologies.pro;
+    return 404; # managed by Certbot
+
+
+}

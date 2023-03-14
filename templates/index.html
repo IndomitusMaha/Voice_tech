@@ -1,0 +1,49 @@
+    {% extends 'base.html' %}
+    {% block body %}
+    <div class="body">
+        <div class="position-relative p-3 p-md-5 m-md-3 text-center"> <!--style="background-image:
+                url({{url_for('static',filename='images/slider4.png')}});
+                background-size: cover"-->
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-6">
+                    <br><br><br>
+                    <div align=center>
+                    <h2 class="font-weight-normal" style="color: #daa520; font-size: 50px"><!--#117a8b-->
+                        {{language_dictionary.voice_technologies_1}}
+                        <br><br>
+                        <p class="lead font-weight-light" style="font-size: 30px">
+                            {{language_dictionary.voice_technologies_2}}</p>
+                    </h2>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <br><br><br>
+                    <div align=left>
+                    <h3 class="font-weight-normal" style="color: #b8860b;">
+                        {{language_dictionary.our_business_directions}}:
+                        <br><br>
+                        <p class="lead font-weight-light" style="">
+                            &nbsp{{language_dictionary.precollection}}</p>
+                        <p class="lead font-weight-light" style="">
+                            &nbsp&nbsp&nbsp{{language_dictionary.st_phase_soft}}</p>
+                        <p class="lead font-weight-light" style="">
+                            &nbsp&nbsp&nbsp{{language_dictionary.nd_phase_soft}}</p>
+                        <p class="lead font-weight-light" style="">
+                            &nbsp&nbsp&nbsp{{language_dictionary.rd_phase_soft}}</p>
+                        <p class="lead font-weight-light" style="">
+                            &nbsp{{language_dictionary.rd_person_calls}}</p>
+                        <p class="lead font-weight-light" style="">
+                            &nbsp&nbsp&nbsp{{language_dictionary.telemarketing}}</p>
+                        <p class="lead font-weight-light" style="">
+                            &nbsp&nbsp&nbsp{{language_dictionary.nps}}</p>
+                        <p class="lead font-weight-light" style="">
+                            &nbsp&nbsp&nbsp{{language_dictionary.hr_calls}}</p>
+                    </h3>
+                    <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+    {% endblock %}

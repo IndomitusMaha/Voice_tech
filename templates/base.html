@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="{{url_for('static',filename='images/logo.ico')}}">
+	<title>Voice Technologies</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="/static/js/jquery-1.7.1.min.js"></script>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        console.log(window.location.href)
+        function getURL() {
+            //alert("The URL of this page is: " + window.location.href);
+            var my_url = window.location.href
+            document.getElementById("url").value = my_url
+            console.log(window.location.href)
+        }
+    </script>
+</head>
+<body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal">
+            <a href="/"><img src="{{url_for('static',filename='images/logo.png')}}" style="width: 180px; height: 60px;
+            object-fit: cover;" alt="Voice Technologies"></a>
+        </h5>
+        <form action="/set_lang" method="post" style="display: flex">
+            <input type="hidden" id="url" name="url"  class="form-control">
+            <input type="submit" name="language" value="en" onclick='getURL();' style="background: none;
+                border: none; color: black; text-decoration: underline; cursor: pointer;">&nbsp&nbsp&nbsp
+            <input type="submit" name="language" value="uz" onclick='getURL();' style="background: none;
+                border: none; color: black; text-decoration: underline; cursor: pointer;">&nbsp&nbsp&nbsp
+            <input type="submit" name="language" value="ру" onclick='getURL();' style="background: none;
+                border: none; color: black; text-decoration: underline; cursor: pointer;">
+        </form>
+        &nbsp&nbsp&nbsp&nbsp&nbsp
+        <a class="btn btn-outline-danger" href="/login">{{language_dictionary.login_button_1}} </a>&nbsp&nbsp&nbsp
+    </div>
+
+    {% block body %}{% endblock %}
+
+</body>
+<footer>
+    <div>
+		<p style="
+		margin-top:90px;
+		font-size: 1.2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: darkmagenta;
+		position: fixed;
+		left: 40%;
+
+        /*bottom: 0;
+  	    margin-bottom: 2%;*/
+	    ">
+			© {{current_year}} Voice Technologies Ltd <br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{language_dictionary.footer}}
+		</p>
+	</div>
+</footer>
+</html>

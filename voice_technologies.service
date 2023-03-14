@@ -1,0 +1,11 @@
+[Unit]
+Description=Site for Voice Technologies
+After=network.target
+
+[Service]
+Type = Simple
+WorkingDirectory= /home/user/Voice_technologies
+ExecStart= /home/user/datalabel/datalabel2env/bin/python3 /home/user/Voice_technologies/app.py
+
+[Install]
+WantedBy = multi-user.target

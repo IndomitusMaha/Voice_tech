@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="{{url_for('static',filename='images/logo.ico')}}">
+	<title>Voice Technologies</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.5/examples/sign-in/signin.css">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+<body class="text-center">
+        <form action="/login" method="post" class="form-signin">
+            <label for="login" class="sr-only">E-mail </label>
+            <input type="login" name="login" id="login" class="form-control" placeholder="{{language_dictionary.enter_email}}" required="" autofocus="">
+            <br>
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" name="password" id="password" class="form-control" placeholder="{{language_dictionary.enter_password}}" required="">
+        <div class="checkbox mb-3">
+        <label>
+        <input type="checkbox" name="remainme" value="remember-me"> {{language_dictionary.remember_me}}
+        </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">{{language_dictionary.login_button}} </button>
+        <hr align=left width="300px">
+            <p class="mt-5 mb-3 text-muted">© {{current_year}} Voice Technologies Ltd <br>
+                {{language_dictionary.footer}}</p>
+       </form>
+	</div>
+</body>
+</html>
